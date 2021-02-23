@@ -1,2 +1,5 @@
 # estimados_r
- Programacion en R  donde se utiliza los metodos de arima, decomposicion multiplicxativa y prediciones graficas
+  Programacion en R  donde se utiliza los metodos de arima, decomposicion multiplicativa y prediciones graficas.
+ Se incluye los datos en .csv para llamarlos y asi poder trabajar con ellos.
+ Los datos fueron estraidos de https://store.steampowered.com/hwsurvey/ y https://web.archive.org/web/20090601000000*/https://store.steampowered.com/hwsurvey/
+ de donde se pudieron encontrar todos los datos historicos, necesarios para lograr los graficos.
