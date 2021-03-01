@@ -11,33 +11,37 @@ library(forecast)
 sgpu = read.csv("gpu2.csv", header = TRUE)
 
 gpu.ts = ts(sgpu[, 1], start = 2007, freq = 12)
-
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsAmd.pdf", width = 8,height = 6)
 plot(gpu.ts, xlab = "", ylab = "")
 title(main = "AMD",
       ylab = "Uso de gpu",
       xlab = "Tiempo")
+dev.off()
+
 
 gpu2.ts = ts(sgpu[, 2], start = 2007, freq = 12)
-
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsintel.pdf", width = 8,height = 6)
 plot(gpu2.ts, xlab = "", ylab = "")
 title(main = "Intel",
       ylab = "Uso de gpu",
       xlab = "Tiempo")
-
+dev.off()
 
 gpu3.ts = ts(sgpu[, 3], start = 2007, freq = 12)
-
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsnvidia.pdf", width = 8,height = 6)
 plot(gpu3.ts, xlab = "", ylab = "")
 title(main = "Nvidia",
       ylab = "Uso de gpu",
       xlab = "Tiempo")
+dev.off()
 
 gpu4.ts = ts(sgpu[, 4], start = 2007, freq = 12)
-
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsotro.pdf", width = 8,height = 6)
 plot(gpu4.ts, xlab = "", ylab = "")
 title(main = "Otros",
       ylab = "Uso de gpu",
       xlab = "Tiempo")
+dev.off()
 
 # 2. Modelo multiplicativo
 
