@@ -11,8 +11,7 @@ library(forecast)
 sgpu = read.csv("gpu2.csv", header = TRUE)
 
 gpu.ts = ts(sgpu[, 1], start = 2007, freq = 12)
-pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsAmd.pdf", width = 8,height = 6)
-plot(gpu.ts, xlab = "", ylab = "")
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/tsAmd.pdf", width = 8,height = 6) 
 title(main = "AMD",
       ylab = "Uso de gpu",
       xlab = "Tiempo")
@@ -159,8 +158,9 @@ pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/arimaamd.pdf", widt
 plot(proy)
 autoplot(proy)
 dev.off()
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/resiamd.pdf", width = 8,height = 6)
 checkresiduals(proy)
-
+dev.off()
 
 arima570 = auto.arima(gpu2.ts, stepwise = F,
                       approximation = F,
@@ -171,8 +171,9 @@ pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/arimaintel.pdf", wi
 plot(proy2)
 autoplot(proy2)
 dev.off()
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/resiintel.pdf", width = 8,height = 6)
 checkresiduals(proy2)
-
+dev.off()
 
 arima580 = auto.arima(gpu3.ts, stepwise = F,
                       approximation = F,
@@ -183,8 +184,9 @@ pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/arimanvidia.pdf", w
 plot(proy3)
 autoplot(proy3)
 dev.off()
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/resinvidia.pdf", width = 8,height = 6)
 checkresiduals(proy3)
-
+dev.off()
 
 arima590 = auto.arima(gpu4.ts, stepwise = F,
                       approximation = F,
@@ -195,7 +197,8 @@ pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/arimaotro.pdf", wid
 plot(proy4)
 autoplot(proy4)
 dev.off()
+pdf(file = "E:/Github/Proyecto_R/estimados_r/estimados_r/PDF/resiotros.pdf", width = 8,height = 6)
 checkresiduals(proy4)
-
+dev.off()
 
 
