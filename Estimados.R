@@ -7,7 +7,7 @@ library(forecast)
 
 # Se generan series temporales
 
-
+f = file.choose()
 sgpu = read.csv("gpu2.csv", header = TRUE)
 
 gpu.ts = ts(sgpu[, 1], start = 2007, freq = 12)
