@@ -4,5 +4,5 @@
  Los datos fueron estraidos de https://store.steampowered.com/hwsurvey/ y https://web.archive.org/web/20090601000000*/https://store.steampowered.com/hwsurvey/
  de donde se pudieron encontrar todos los datos historicos, necesarios para lograr los graficos.
  
- Las instrucciones para guaradr los archivos fue revisado de esta pagina :
+ Las instrucciones para guardar los archivos fue revisado de esta pagina :
  https://bookdown.org/ndphillips/YaRrr/saving-plots-to-a-file-with-pdf-jpeg-and-png.html
